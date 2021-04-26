@@ -9,7 +9,7 @@
 <title>Jblog</title>
 	<style type="text/css">
 		body{
-			 background-color: pink;
+			
 			 text-align: center; 
 		}
 	
