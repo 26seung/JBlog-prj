@@ -20,15 +20,15 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public MemberVo getUser(String email, String password) {
-		MemberVo vo = memberDao.selectUser(email,password);
+	public MemberVo getUser(String id, String password) {
+		MemberVo vo = memberDao.selectUser(id,password);
 		return vo;
 	}
 
-	// 	이메일 중복 처리
+	// 	id 중복 처리
 	@Override
-	public MemberVo getUser(String email) {
-		MemberVo vo = memberDao.selectUser(email);
+	public MemberVo getUser(String id) {
+		MemberVo vo = memberDao.selectUser(id);
 		return vo;
 	}
 

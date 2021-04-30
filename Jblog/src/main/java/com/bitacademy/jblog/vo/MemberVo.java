@@ -7,24 +7,13 @@ public class MemberVo {
 	private Long userNo;
 	private String id;
 	private String userName;
-	private String passWord;
+	private String password;
 	private Date joinDate;
 	
 	
 	
 	public MemberVo() {
 	
-	}
-
-
-
-	public MemberVo(Long userNo, String id, String userName, String passWord, Date joinDate) {
-	
-		this.userNo = userNo;
-		this.id = id;
-		this.userName = userName;
-		this.passWord = passWord;
-		this.joinDate = joinDate;
 	}
 
 
@@ -65,14 +54,14 @@ public class MemberVo {
 
 
 
-	public String getPassWord() {
-		return passWord;
+	public String getPassword() {
+		return password;
 	}
 
 
 
-	public void setPassWord(String passWord) {
-		this.passWord = passWord;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 
@@ -91,11 +80,11 @@ public class MemberVo {
 
 	@Override
 	public String toString() {
-		return "MemberVo [userNo=" + userNo + ", id=" + id + ", userName=" + userName + ", passWord=" + passWord
+		return "MemberVo [userNo=" + userNo + ", id=" + id + ", userName=" + userName + ", password=" + password
 				+ ", joinDate=" + joinDate + "]";
 	}
-	
-	
-	
+
+
+
 	
 }

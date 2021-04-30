@@ -28,25 +28,25 @@ public class MemberDaoImpl implements MemberDao {
 		try {
 			insertedCount = sqlSession.insert("members.insert", vo);
 		} catch  (Exception e) {
-			logger.error("예외 발생:" + e.getMessage());
+			logger.error("예외 발생:" + e.getMessage());																								
 			throw new MemberDaoException("회원 가입 중 오류 발생!", vo);
 		}
 		return insertedCount;
 	}
 
 	@Override
-	public MemberVo selectUser(String email, String password) {
+	public MemberVo selectUser(String id, String password) {
 		Map<String, String> userMap = new HashMap<>();
-		userMap.put("email",email);
+		userMap.put("id",id);
 		userMap.put("password",password);
-		MemberVo vo = sqlSession.selectOne("members.selectUserByEmailAndPassword", userMap);
+		MemberVo vo = sqlSession.selectOne("members.selectUserByNameAndPassword", userMap);
 		return vo;
 	}
 
 	@Override
-	public MemberVo selectUser(String email) {
+	public MemberVo selectUser(String id) {
 		
-		MemberVo vo = sqlSession.selectOne("members.selectUserByEmail", email);
+		MemberVo vo = sqlSession.selectOne("members.selectUserById", id);
 		return vo;
 	}
 
