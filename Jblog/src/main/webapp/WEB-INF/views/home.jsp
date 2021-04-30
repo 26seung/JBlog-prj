@@ -19,7 +19,7 @@
 	
 	<jsp:include page="/WEB-INF/views/inc/header.jsp" />
 	<jsp:include page="/WEB-INF/views/inc/navigation.jsp" />
-	<jsp:include page="/WEB-INF/views/inc/center.jsp" />	
+	<jsp:include page="/WEB-INF/views/inc/center.jsp" />
 	
 </body>
 </html>
