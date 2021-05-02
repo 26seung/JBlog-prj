@@ -21,6 +21,11 @@
 		}
 	
 	</style>
+	
+	<!-- 스크립트 삽입 -->
+	<script src="<c:url value="/javascript/members.js"/>"></script>
+
+
 </head>
 <body>
 	<div class="contatiner">
